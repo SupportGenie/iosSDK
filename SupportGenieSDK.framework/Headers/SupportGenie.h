@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SupportGenie : NSObject
 
-//@property (readonly) NSPersistentContainer * persistentContainer;
+@property (readonly) NSPersistentContainer * persistentContainer;
 
 + (SupportGenie *)instance;
 - (void) start;

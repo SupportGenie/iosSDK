@@ -15,5 +15,4 @@ FOUNDATION_EXPORT double SupportGenieSDKVersionNumber;
 FOUNDATION_EXPORT const unsigned char SupportGenieSDKVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <SupportGenieSDK/PublicHeader.h>
-
-
+#import "SupportGenie.h"
