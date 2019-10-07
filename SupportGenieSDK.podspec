@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|  
     s.name              = 'SupportGenieSDK'
-    s.version           = '0.0.5'
+    s.version           = '0.0.6'
     s.summary           = 'sdk for adding SupportGeenie chat and live video help to your iOS app'
     s.homepage          = 'https://supportgenie.io/'
 
@@ -8,12 +8,15 @@ Pod::Spec.new do |s|
     s.license           = { :type => 'MIT', :file => 'LICENSE' }
 
     s.platform          = :ios
-    s.source            = { :git => 'https://github.com/SupportGenie/iosSDK.git', :tag => 'v0.0.5' }
+    s.source            = { :git => 'https://github.com/SupportGenie/iosSDK.git', :tag => 'v0.0.6' }
     s.source_files      = "SupportGenieSDK.framework/Headers/*.h"
     s.ios.deployment_target = '10.0'
+    s.pod_target_xcconfig = { 'VALID_ARCHS' => 'arm64 armv7' }
     s.ios.vendored_frameworks = 'SupportGenieSDK.framework'
     s.frameworks = 'UIKit', 'Security', 'CFNetwork', 'MobileCoreServices'
     s.dependency 'MDWamp', '~> 2.2.0'
+    s.dependency 'AWSCognito', '~> 2.11.0'
+    s.dependency 'AWSS3', '~> 2.11.0'
 end
 
 
