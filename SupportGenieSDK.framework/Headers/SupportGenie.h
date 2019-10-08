@@ -15,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (readonly) NSPersistentContainer * persistentContainer;
 
 + (SupportGenie *)instance;
-- (void) start:(NSString *)companyId;
+- (void) start:(NSString *)companyId userId:(NSString *)userId;
 - (void) applicationDidBecomeActive;
 - (void) showSessions;
 
