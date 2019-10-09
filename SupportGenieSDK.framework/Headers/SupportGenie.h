@@ -21,6 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void) start:(NSString * _Nullable)companyId userId:(NSString * _Nullable)userId userData:(NSDictionary * _Nullable)userData;
 - (void) applicationDidBecomeActive;
 - (void) showSessions;
+- (BOOL) isInitialized;
 
 @end
 
