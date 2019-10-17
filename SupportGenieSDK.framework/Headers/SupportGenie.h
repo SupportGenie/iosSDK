@@ -10,9 +10,15 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@protocol SupportGenieDelegate <NSObject>
+-(void)onUnreadMessagesChanged: (unsigned long)numUnreadMessages;
+@end
+
 @interface SupportGenie : NSObject
 
 @property (readonly) NSPersistentContainer * persistentContainer;
+@property (nonatomic,weak) id <SupportGenieDelegate> delegate;
+@property (nonatomic) unsigned long unreadMessages;
 
 + (SupportGenie *)instance;
 - (void) start;
