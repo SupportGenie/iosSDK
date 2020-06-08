@@ -1,6 +1,0 @@
-framework module SupportGenieSDK {
-  umbrella header "SupportGenieSDK.h"
-
-  export *
-  module * { export * }
-}
