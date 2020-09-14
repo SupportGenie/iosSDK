@@ -5,7 +5,7 @@ git add SupportGenieSDK.framework
 git add SupportGenieSDK.podspec
 git commit -m "added JWT auth"
 git push origin
-git tag v0.0.184
+git tag v0.0.186
 git push origin --tags
 pod trunk push SupportGenieSDK.podspec --allow-warnings
 
