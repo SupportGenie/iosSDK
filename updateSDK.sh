@@ -6,7 +6,7 @@ git add SupportGenieSDK.podspec
 git add updateSDK.sh
 git commit -m "added new code for videoCall using videoSessionId"
 git push origin
-git tag v0.0.198
+git tag v0.0.213
 git push origin --tags
 pod trunk push SupportGenieSDK.podspec --allow-warnings
 
